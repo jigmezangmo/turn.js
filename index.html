@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>FlipBook</title>
+       
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="flipbook">
+            <div>
+                <h1>First Page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Perferendis cum aliquid explicabo repellendus obcaecati, 
+                    veritatis a quasi consequatur accusantium tempora omnis iure 
+                    consequuntur tempore nesciunt earum corporis. Libero, 
+                    suscipit id.
+                </p>
+            </div>
+
+            <div>
+                <h1>Second Page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Perferendis cum aliquid explicabo repellendus obcaecati, 
+                    veritatis a quasi consequatur accusantium tempora omnis iure 
+                    consequuntur tempore nesciunt earum corporis. Libero, 
+                    suscipit id.
+                </p>
+            </div>
+
+            <div>
+                <h1>Third Page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Perferendis cum aliquid explicabo repellendus obcaecati, 
+                    veritatis a quasi consequatur accusantium tempora omnis iure 
+                    consequuntur tempore nesciunt earum corporis. Libero, 
+                    suscipit id.
+                </p>
+            </div>
+
+            <div>
+                <h1>Fourth Page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Perferendis cum aliquid explicabo repellendus obcaecati, 
+                    veritatis a quasi consequatur accusantium tempora omnis iure 
+                    consequuntur tempore nesciunt earum corporis. Libero, 
+                    suscipit id.
+                </p>
+            </div>
+
+            <div>
+                <h1>Fifth Page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Perferendis cum aliquid explicabo repellendus obcaecati, 
+                    veritatis a quasi consequatur accusantium tempora omnis iure 
+                    consequuntur tempore nesciunt earum corporis. Libero, 
+                    suscipit id.
+                </p>
+            </div>
+
+            <div>
+                <h1>Sixth Page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Perferendis cum aliquid explicabo repellendus obcaecati, 
+                    veritatis a quasi consequatur accusantium tempora omnis iure 
+                    consequuntur tempore nesciunt earum corporis. Libero, 
+                    suscipit id.
+                </p>
+            </div>
+
+            <div>
+                <h1>Seventh Page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Perferendis cum aliquid explicabo repellendus obcaecati, 
+                    veritatis a quasi consequatur accusantium tempora omnis iure 
+                    consequuntur tempore nesciunt earum corporis. Libero, 
+                    suscipit id.
+                </p>
+            </div>
+
+            <div>
+                <h1>Eight Page</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                    Perferendis cum aliquid explicabo repellendus obcaecati, 
+                    veritatis a quasi consequatur accusantium tempora omnis iure 
+                    consequuntur tempore nesciunt earum corporis. Libero, 
+                    suscipit id.
+                </p>
+            </div>
+        </div>
+        <script type="text/javascript" src="turn.min.js"></script>
+       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>  
+        <script>
+            $(document).ready(function(){
+                $('#flipbook').turn({
+                width: 600,
+                height: 400,
+                page:1,
+                autoCenter: true,
+                duration: 2000
+
+            });
+            });
+            
+        </script>
+        
+     
+<!-- <script type="text/javascript">
+
+
+	$(window).ready(function() {
+		$('#flipbook').turn({
+							display: 'double',
+							acceleration: true,
+							gradients: !$.isTouch,
+							elevation:50,
+							when: {
+								turned: function(e, page) {
+									/*console.log('Current view: ', $(this).turn('view'));*/
+								}
+							}
+						});
+	});
+	
+	
+	$(window).bind('keydown', function(e){
+		
+		if (e.keyCode==37)
+			$('#flipbook').turn('previous');
+		else if (e.keyCode==39)
+			$('#flipbook').turn('next');
+			
+	}); -->
+    </body>
+</html>
